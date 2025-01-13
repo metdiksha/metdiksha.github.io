@@ -4,123 +4,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diksha-About Me</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-
-        }
-
-        body,
-        html {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            height: 100%;
-            background-color: #333;
-            color: white;
-            width: 100%;
-            overflow-x: hidden;
-            overflow-y: hidden;
-        }
-
-        .container {
-            background-image: "beach.jpg";
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-
-        .header {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            padding: 20px;
-        }
-
-        .header a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        .header .logo img {
-            height: 50px;
-        }
-        .txt h1{
-            color: bisque;
-        }
-        /*
-        .txt p{
-            color: aquamarine;
-        }
-            */
-
-        .categories {
-            margin-top: 20px;
-        }
-
-        .categories a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        .footer {
-            position: absolute;
-            bottom: 20px;
-            right: 20px;
-        }
-    </style>
+    <title>About Me</title>
+    <link href="./styles.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+VN:wght@100..400&family=Poppins&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
+    <header>
+        <div>
+            <h1>Welcome to Diksha's World</h1>
+            <p> Engineer | Coder | Photographer | Painter | Nature Lover | Traveler</p>
+        </div>
+    </header>
 
-        <div class="header">
-            <div class="logo">
-                <img src="dj.png" alt="DJ Logo">
-            </div>
-            <div class="navigation">
-                <a href="#">Projects</a>
-                <a href="#">Skills</a>
-                <a href="#">Photography</a>
-                <a href="#">Blogs</a>
-            </div>
+    <nav>
+        <div class="logo">
+            <a href="./index.html">
+            <img src="./images/logo.png">
+            <h1>Diksha's</h1>
+        </a>
+        </div>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html#about">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="./gallery/gallery.html">Gallery</a></li>
+            <li><a href="./index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-        </div>
-        <div class="txt">
-            <h1>Hola Amigos!</h1>
-            <br>
-            <p>
-            <h2>Welcome to my portfolio</h2>
-            <br> 
-            As a passionate cybersecurity and AI/ML enthusiast. Explore my projects
-            and achievements to see how I am contributing to the future of technology and security.
-            <p>
-            <p>PS: I love exploring new places and learning new things</p>
-            <br>
-        </div>
-        <p>Want to know more about me?</p>
-        <div class="categories">
-            <a href="#">Experience</a>
-            <a href="#">Education</a>
-            <a href="#">Achievements</a>
-            <a href="#">About Me</a>
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I am a passionate photographer, computer engineer, and travel enthusiast who finds inspiration in the beauty
+            of nature and the joy of creativity.</p>
+    </section>
 
-        </div>
-        <div class="footer">
-            <p>&copy; Diksha</p>
-        </div>
-    </div>
+    <section id="portfolio" class="portfolio">
+        <h2>My Photography</h2>
+        <img src="./images/image1.jpeg" alt="Photography 1">
+        <img src="./images/image2.jpeg" alt="Photography 2">
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form" action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Diksha Jain. All Rights Reserved.</p>
+    </footer>
 </body>
 
 </html>
